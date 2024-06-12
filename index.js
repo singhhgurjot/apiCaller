@@ -1,6 +1,12 @@
 const axios = require("axios");
+const express = require("express");
 setInterval(() => {
   axios.get("https://minitwitterbackend-p4lv.onrender.com/test").then((res) => {
     console.log(res.data);
   });
-}, 200000);
+}, 2000);
+console.log("File running");
+const app = express();
+app.listen(3000, () => {
+  console.log("Listenning");
+});
