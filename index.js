@@ -4,7 +4,7 @@ setInterval(() => {
   axios.get("https://minitwitterbackend-p4lv.onrender.com/test").then((res) => {
     console.log(res.data);
   });
-}, 2000);
+}, 300000);
 console.log("File running");
 const app = express();
 app.listen(3000, () => {
