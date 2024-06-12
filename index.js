@@ -3,4 +3,4 @@ setInterval(() => {
   axios.get("https://minitwitterbackend-p4lv.onrender.com/test").then((res) => {
     console.log(res.data);
   });
-}, 300000);
+}, 5000);
