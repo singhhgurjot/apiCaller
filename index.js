@@ -10,3 +10,6 @@ const app = express();
 app.listen(3000, () => {
   console.log("Listenning");
 });
+app.get("/", (req, res) => {
+  res.send("Hello, world!");
+});
